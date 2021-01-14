@@ -16,17 +16,17 @@
     while ($row = $result->fetch_assoc())
     {
         echo "<tr><td>".$row["usn"]."</td><td>".$row["name"]."</td><td>".$row["marks"]."</td></tr>";
-        $rows[$row["usn"]] = array($row["name"], $row["marks"]);
-        $sorted[] = $row["usn"];
+        $sorted[] = $row;
     }
     echo "</table>";
 
+    $sort_key = "usn";
     for ($i = 0; $i < count($sorted) - 1; $i++)
     {
         $min_idx = $i;
         for ($j = $i; $j < count($sorted); $j++)
         {
-           if ($sorted[$j] < $sorted[$min_idx]) {
+           if ($sorted[$j][$sort_key] < $sorted[$min_idx][$sort_key]) {
                 $min_idx = $j;
            }
         }
@@ -39,11 +39,9 @@
     echo "<b>After sorting:</b>";
     echo "<table>";
     echo "<tr><th>USN</th><th>NAME</th><th>MARKS</th></tr>";
-    foreach ($sorted as $usn)
+    foreach ($sorted as $row)
     {
-        $name = $rows[$usn][0];
-        $marks = $rows[$usn][1];
-        echo "<tr><td>".$usn."</td><td>".$name."</td><td>".$marks."</td></tr>";
+        echo "<tr><td>".$row["usn"]."</td><td>".$row["name"]."</td><td>".$row["marks"]."</td></tr>";
     }
     echo "</table>";
 ?>
