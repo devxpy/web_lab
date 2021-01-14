@@ -1,0 +1,16 @@
+<script>
+  let str = prompt("Enter The Query");
+  document.write(`Entered Query: ${str}<br>`);
+  let num = parseInt(str);
+  if (num) {
+    let rev = 0;
+    while (num) {
+      rev = rev * 10 + (num % 10);
+      num = Math.floor(num / 10);
+    }
+    document.write(`Given Number In Reverse Order: ${rev}`);
+  } else {
+    str = str.search(/[aeiouAEIOU]/);
+    document.write(`The First Occurence Of Vowel is at: ${str + 1}`);
+  }
+</script>

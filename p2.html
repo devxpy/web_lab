@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Squares and Cubes</title>
+  </head>
+    <p><b>SQUARES AND CUBES FROM 0 TO 10</b></p>
+    <table border="2" cellspacing="2">
+      <th>Number</th>
+      <th>Square</th>
+      <th>Cube</th>
+    <script>
+      for (let i = 1; i <= 10; i++) {
+        document.write(`
+            <tr>
+                <td>${i}</td>
+                <td>${i * i}</td>
+                <td>${i * i * i}</td>
+            </tr>
+        `);
+      }
+      document.write("</table>");
+    </script>
+</html>

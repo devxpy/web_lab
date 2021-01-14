@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="h"></div>
+    <script>
+      let elem = document.getElementById("h");
+      let dir = 1;
+      let textSize = 0;
+
+      setInterval(function() {
+        if (dir > 0) {
+          textSize += 1;
+          elem.innerText = "TEXT-GROWING";
+          elem.style.color = "blue";
+        } else {
+          textSize -= 1;
+          elem.innerText = "TEXT-SHRINKING";
+          elem.style.color = "red";
+        }
+        elem.style.fontSize = `${textSize}pt`;
+        if (textSize > 50) {
+          dir = -1;
+        } else if (textSize < 5) {
+          dir = 1;
+        }
+      }, 100);
+    </script>
+  </body>
+</html>
