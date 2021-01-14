@@ -7,13 +7,13 @@
     foreach ($states as $c) {
         echo "{$c} ";
 
-        if (preg_match("/^(.*)(xas)$/", $c))
+        if (preg_match("/(xas)$/", $c))
             $states_list[0] = $c;
         else if (preg_match("/^(k)(.*)(s)$/i", $c))
             $states_list[1] = $c;
         else if (preg_match("/^(M)(.*)(s)$/", $c))
             $states_list[2] = $c;
-        else if (preg_match("/^(.*)(a)$/", $c))
+        else if (preg_match("/(a)$/", $c))
             $states_list[3] = $c;
     }
     echo "<br>";
