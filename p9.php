@@ -21,7 +21,6 @@
     for ($i = 0; $i < count($states_list); $i++) {
         echo "statesList[$i] = $states_list[$i]<br>";
     }
-
 ?>
 </body>
 </html>
