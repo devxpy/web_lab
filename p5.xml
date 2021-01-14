@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="p5.css"?>
+<STUDENTDATA>
+    <STUDENT>
+        <USN>1MV17CS105</USN>
+        <NAME>Shubh Saxena </NAME>
+        <COLLEGE>MVIT</COLLEGE>
+        <BRANCH>CSE</BRANCH>
+        <YEAR>2020</YEAR>
+        <EMAIL>sunchit@gmail.com</EMAIL>
+    </STUDENT>
+    <STUDENT>
+        <USN>1MV17CS129</USN>
+        <NAME>KUSHAL PALA</NAME>
+        <COLLEGE>MVIT</COLLEGE>
+        <BRANCH>CSE</BRANCH>
+        <YEAR>2020</YEAR>
+        <EMAIL>kushal@gmail.com</EMAIL>
+    </STUDENT>
+    <STUDENT>
+        <USN>1MV17CS126</USN>
+        <NAME>DIMPLE</NAME>
+        <COLLEGE>MVIT</COLLEGE>
+        <BRANCH>CSE</BRANCH>
+        <YEAR>2020</YEAR>
+        <EMAIL>dimple@gmail.com</EMAIL>
+    </STUDENT>
+</STUDENTDATA>
+
+
